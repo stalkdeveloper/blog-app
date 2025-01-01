@@ -2,5 +2,13 @@
   "dependencies": {
     "express": "^4.21.1",
     "mongoose": "^8.8.4"
+  },
+  "scripts": {
+    "migrate": "node src/scripts/migration.js",
+    "migrate:down": "node src/scripts/migration.js down",
+    "make:migration": "node src/scripts/generateMigration.js",
+    "make:model": "node src/scripts/generateModel.js",
+    "make:controller": "node src/scripts/generateController.js",
+    "seed": "node src/scripts/generateSeed.js"
   }
 }

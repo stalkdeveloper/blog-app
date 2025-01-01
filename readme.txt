@@ -23,9 +23,9 @@ blog-app/
 │   │   ├── User.js                                
 │   │   └── Post.js                                
 │   │
-│   ├── scripts/                                    
-│   │   ├── seed.js                                           
-│   │   │                           
+│   ├── scripts/
+│   │   ├── migration.js
+│   │   └── seed.js                        
 │   │
 │   ├── routes/                                    
 │   │   ├── web/                                  
@@ -62,6 +62,11 @@ blog-app/
 │   ├── config/
 │   │   ├── db.js
 │   │   └── app.js
+│   ├── db
+│   │   │   
+│   │   ├── migrations
+│   │   ├── seeds/
+│   │   └── db.js
 │   │
 │   ├── app.js
 │   └── dbConnect.js
@@ -99,3 +104,10 @@ blog-app/
 
 1st time command run
 1. npm install mongoose
+
+
+``
+node src/scripts/migration.js // npm run migrate
+node src/scripts/migration.js down  // npm run migrate:down
+node src/scripts/generateMigration.js // npm run make:migration
+
