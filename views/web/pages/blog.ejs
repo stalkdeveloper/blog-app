@@ -1,0 +1,43 @@
+<body>
+	<!--Header Start-->
+	<%- include('../partials/header') %>
+	<!--Header End-->
+
+	<!--Breadcrumb	Section Start-->
+	<section class="herosection breadcrumbsection">
+		<div class="container">
+			<div class="row patb-100 align-items-end row-gap-4">
+				<div class="col-12 text-center">
+					<h2 class="mainheading mb-sm-3 mb-2">Latest Blog</h2>
+					<p class="fs-20 m-0">Lorem ipsum dolor sit amet consectetur.</p>
+				</div>
+				<div class="col-auto mx-auto">
+					<nav aria-label="breadcrumb" class="breadcrumbs">
+                        <ol class="breadcrumb m-0 justify-content-center">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+                        </ol>
+                    </nav>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Breadcrumb	Section End-->
+
+	<!--Recent Artical Section Start-->
+    <%- include('partials/recent-article') %>
+    <!--Recent Artical Section End-->
+
+    <!--Follow On Instagran Section Start-->
+    <%- include('partials/instagram-section') %>
+    <!--Follow On Instagran Section End-->
+
+	<!--Footer Start-->
+    <%- include('partials/footer') %>
+    <!--Footer End-->
+
+    <!--Scripts Start-->
+    <%- include('partials/scripts') %>
+</body>
+
+</html>

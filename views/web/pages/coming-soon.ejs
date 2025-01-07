@@ -1,0 +1,111 @@
+<body>
+	<!--Page Not Found Section Start-->
+	<section class="vh-100 errorsection">
+		<div class="row flex-column flex-nowrap h-100 overflow-hidden g-0">
+			<div class="col-12">
+				<nav class="navbar navbar-expand-md header" aria-label="Offcanvas navbar large">
+					<div class="container">
+						<a class="navbar-brand" href="index.html"><img src="/web/assets/images/logo.svg" height="100" width="100" alt="logo"></a>
+						<div class="d-flex d-md-none align-items-center gap-md-3 gap-2">
+							<div class="userprofileNav">
+								<div class="welcome">
+									<div class="dropdown">
+										<button class="profileBtn" type="button"><span class="user-img"><img src="/web/assets/images/user.jpg" height="100" width="100" alt="user"></span></button>
+									</div>
+								</div>
+							</div>
+							<button class="navbar-toggler burgurMenu shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+								<span><img src="/web/assets/images/icon/menu.svg" class="w-100" height="100" width="100" alt=""></span>
+							</button>
+						</div>
+						<div class="offcanvas offcanvas-end border-0" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+							<div class="offcanvas-header">
+								<h5 class="offcanvas-title" id="offcanvasNavbar2Label"><img src="/web/assets/images/logo.svg" height="100" width="100" alt="logo"></h5>
+								<button type="button" class="btn-close shadow-none btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div class="offcanvas-body">
+								<ul class="navbar-nav justify-content-center align-items-md-center flex-grow-1" id="navbar">
+									<li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
+									<li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+									<li class="nav-item childlink"><a class="nav-link" href="javascript:;">Pages</a>
+										<ul class="list-unstyled mb-0 mx-md-0 ms-auto childlink-group">
+											<li><a href="blog. html">Blog</a></li>
+											<li><a href="page-not-found.html">404</a></li>
+											<li><a href="blog-details.html">Single Blog</a></li>
+											<li><a href="javascript:;" class="active">Coming Soon</a></li>
+										</ul>
+									</li>
+									<li class="nav-item"><a class="nav-link" href="contact-us.html" >Contact Us</a></li>
+									<li class="nav-item mt-3 d-md-none d-block"><a class="themebtn loginbtn" href="javascript:;" >Login</a></li>
+								</ul>
+								<div class="rightside align-items-center d-md-flex d-none">
+									<div class="userprofileNav">
+										<div class="welcome">
+											<div class="dropdown">
+												<button class="profileBtn" type="button"><span class="user-img"><img src="/web/assets/images/user.jpg" height="100" width="100" alt="user"></span></button>
+											</div>
+										</div>
+									</div>
+									<div class="loginbutton"><a href="javascript:;" class="themebtn loginbtn fill">Login</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div class="col-12 h-100 flex-fill overflow-x-hidden overflow-y-auto">
+				<div class="container h-100 errorfield patb-50">
+					<div class="row h-100 align-items-center">
+						<div class="col-lg-8 col-11 mx-auto">
+							<div class="card border-0">
+								<div class="card-body patb-50">
+									<div class="row row-gap-3">
+										<div class="col-12">
+											<div class="h1 m-0">Coming Soon..</div>
+										</div>
+										<div class="col-12 mb-3">
+											<h6 class="m-0">Be the first to know when our new website is live</h6>
+										</div>
+										<div class="col-12 mb-3">
+											<div id="countdown" class="d-flex countdown-timer align-items-center justify-content-center gap-4"></div>
+										</div>
+										<div class="col-12"><a href="index.html" class="followbtn fill themebtn">Back To Home</a></div>
+									</div>
+								</div>
+								<!-- <div class="robot"><img src="/web/assets/images/roboy.gif" height="100" width="100" alt="gif"></div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Page Not Found Section End-->
+
+    <!--Scripts Start-->
+    <%- include('../partials/scripts') %>
+	<!--Scripts End-->
+
+	<script>
+		var target_date = new Date().getTime() + (1000*3600*288); // set the countdown date
+		var days, hours, minutes, seconds; // variables for time units
+		var countdown = document.getElementById("countdown"); // get tag element
+
+		getCountdown();
+		setInterval(function () { getCountdown(); }, 1000);
+
+		function getCountdown(){
+			// find the amount of "seconds" between now and target
+			var current_date = new Date().getTime();
+			var seconds_left = (target_date - current_date) / 1000;
+			days = pad( parseInt(seconds_left / 86400) );
+			seconds_left = seconds_left % 86400;
+			hours = pad( parseInt(seconds_left / 3600) );
+			seconds_left = seconds_left % 3600;
+			minutes = pad( parseInt(seconds_left / 60) );
+			seconds = pad( parseInt( seconds_left % 60 ) );
+			// format countdown string + set tag value
+			countdown.innerHTML = "<h3>" + days + "<span>Day</span>" + "</h3><h3>" + hours + "<span>Hours</span>" + "</h3><h3>" + minutes + "<span>Minutes</span>" + "</h3><h3>" + seconds + "<span>Seconds</span>" + "</h3>"; 
+		}
+	</script>
+</body>

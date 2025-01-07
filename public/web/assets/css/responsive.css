@@ -1,0 +1,468 @@
+
+@media screen and (min-width: 768px) {
+    .header>div {
+        padding: 10px 20px
+    }
+}
+
+@media screen and (min-width:1199px) and (max-width:1399px){
+	:root{
+		--heading-1: 50px;
+		--heading-2: 40px;
+		--heading-3: 30px;
+		--heading-4: 24px;
+	}
+}
+
+@media screen and (max-width:1199px){
+	:root{
+		--heading-1: 45px;
+		--heading-2: 35px;
+		--heading-3: 28px;
+		--heading-4: 22px;
+		--heading-5: 20px;
+		--heading-6: 16px;
+
+		--rounded-40: 35px;
+		--rounded-30: 28px;
+		--rounded-24: 22px;
+		--rounded-20: 18px;
+	}
+	.patb-100{
+		padding-top: 80px;
+		padding-bottom: 80px;	
+	}
+	.pat-100{
+		padding-top: 80px;
+	}
+	.pab-100{
+		padding-bottom: 80px;
+	}
+	.herosection .mainheading {
+        margin-bottom: 40px;
+    }
+
+    .herosection .innerfluid {
+        padding: 50px;
+    }
+
+    .herosection .innerfluid .multipalblog {
+        margin-bottom: 20px;
+    }
+
+    form .searchgroup .form-control,
+    form .searchgroup .searchBtn {
+        height: 50px;
+    }
+
+    form .searchgroup .searchBtn img {
+        width: 20px;
+    }
+
+    .blogcard .card-body .discribtion {
+        font-size: 14px;
+    }
+
+    .nav-pills .nav-item .nav-link {
+        padding: .5rem 1rem;
+        font-size: 14px;
+    }
+
+    .videosection .innerbody .innerfluid .play-btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    .recentarticle-card .card-body .userdetaisl .username {
+        gap: 12px;
+        font-size: 12px;
+        line-height: 21px;
+    }
+    .recentarticle-card .card-body .userdetaisl .username span::before {
+        left: -6px;
+    }
+    .videosection .innerbody .video-top .heading .arrowimg{
+        height: 40px;
+        width: 40px;
+    }
+	
+}
+
+@media screen and (max-width:991px){
+	.patb-100{
+		padding-top: 50px;
+		padding-bottom: 50px;	
+	}
+	.pat-100{
+		padding-top: 50px;
+	}
+	.pab-100{
+		padding-bottom: 50px;
+	}
+	:root{
+		--heading-1: 40px;
+		--heading-2: 30px;
+		--heading-3: 24px;
+		--heading-4: 20px;
+		--heading-5: 18px;
+
+		--rounded-40: 30px;
+		--rounded-30: 24px;
+		--rounded-24: 20px;
+		--rounded-20: 16px;
+	}
+	.fs-20{
+		font-size: 18px;
+	}
+	.fs-18{
+		font-size: 16px;
+	}
+	.heading {
+		gap: 8px;
+	}
+	.sectionHeading {
+		margin-bottom: 1.5rem;
+	}
+	.header .navbar-nav {
+        gap: 15px
+    }
+
+    .header .rightside .nevigate {
+        gap: 16px
+    }
+
+    .header .rightside .nevigate li .iconsimages {
+        width: 20px;
+        height: 20px
+    }
+
+    .header .rightside .nevigate li .iconsimages span {
+        width: 12px;
+        height: 12px
+    }
+
+    .header .offcanvas {
+        background-color: var(--body-bg-dark)
+    }
+
+    .header .offcanvas-header {
+        border-bottom: 1px solid var(--secondary)
+    }
+
+    .header .offcanvas-header .offcanvas-title {
+        height: 40px;
+    }
+    .header .offcanvas-header .offcanvas-title img {
+        height: 100%;
+        object-fit: contain;
+    }
+	
+    /* .header .offcanvas-body .navbar-nav .nav-item .nav-link {
+        color: var(--white);
+    }
+    .header .offcanvas-body .navbar-nav .nav-item .loginbtn {
+        color: var(--white) !important;
+    }
+    
+    .header .offcanvas-body .navbar-nav .nav-item.childlink .nav-link::after, .header .offcanvas-body .navbar-nav .nav-item .loginbtn {
+        border-color: var(--white);
+    } */
+	
+    form .searchgroup .form-control,
+    form .searchgroup .searchBtn {
+        height: 45px;
+    }
+
+    form .searchgroup .searchBtn img {
+        width: 20px;
+    }
+
+    .blogcard.socialblog .card-body .userdetaisl {
+        margin-bottom: 10px;
+    }
+
+    .blogcard.socialblog .card-body .titles {
+        margin-bottom: 25px;
+    }
+
+    .recentarticle-card .card-body .innerbody .titles {
+        margin: 0px 0px 10px;
+    }
+
+    .recentarticle-card .card-body .innerbody p {
+        margin-bottom: 25px;
+    }
+
+    .socialmedia {
+        gap: 10px;
+    }
+
+    .socialmedia a {
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+    }
+
+    .socialmedia.horizontal a img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .followsection .card .card-body .followimg {
+        width: 180px;
+        height: 180px;
+    }
+
+    .latestblog-section .wigits .card .card-body .trending-topic.popularpost li .leftside .discriptions {
+        margin-bottom: 10px;
+    }
+
+    /* .latestblog-section .wigits .card .card-body .trending-topic.popularpost.first li:last-child::before {
+        height: 1px;
+    } */
+
+    .videosection .innerbody {
+        min-height: 400px;
+        height: 50vh;
+    }
+
+    .videosection .innerbody .innerfluid .play-btn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .videosection .innerbody .video-top .heading .arrowimg{
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media screen and (max-width:767px){
+	:root{
+		--heading-1: 35px;
+		--heading-2: 28px;
+		--heading-4: 18px;
+		--heading-5: 16px;
+	}
+	.themebtn{
+		padding: 10px 20px;
+		font-size: 12px;
+		border-radius: 10px;
+    }
+	.heading {
+		gap: 6px;
+	}
+	.header .navbar-nav {
+        gap: 10px
+    }
+    .userprofileNav .welcome .dropdown .dropdown-menu li a {
+        font-size: 14px
+    }
+    .header .navbar-nav .nav-item .nav-link{
+        padding: 10px 0px;
+    }
+    .header .navbar-nav .nav-item .nav-link::before{
+        width: 100%;
+    }
+    .header .navbar-nav .nav-item.childlink .childlink-group{
+        position: unset;
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        display: none;
+    }
+    .header .navbar-nav .nav-item.childlink:hover .childlink-group{
+        display: flex;
+    }
+    .userprofileNav .user-img {
+        width: 35px;
+        height: 35px;
+    }
+	.herosection .mainheading {
+        margin-bottom: 35px;
+    }
+
+    .herosection .mainheading .main {
+        margin-bottom: 20px;
+    }
+
+    .herosection .innerfluid {
+        padding: 30px;
+    }
+
+    form .searchgroup .form-control,
+    form .searchgroup .searchBtn {
+        height: 40px;
+    }
+
+    .musiccard .musicimg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .nav-pills .nav-item .nav-link {
+        padding: .3rem 1rem;
+    }
+
+    .blogcard.varticalblog,  .blogcard.socialblog  {
+        padding: 15px;
+    }
+
+    .blogcard.socialblog .card-body .titles {
+        margin-bottom: 20px;
+    }
+
+    .recentarticle-card .card-body .innerbody p {
+        margin-bottom: 20px;
+    }
+
+    .followsection .card .card-body .followimg {
+        width: 150px;
+        height: 150px;
+    }
+
+    .followsection .innerbody .followbtn {
+        gap: 6px;
+        padding: 7px 15px;
+    }
+
+    .countersection .innerfluid .countergroup .counter:nth-child(2) {
+        border: none;
+    }
+
+    .countersection .innerfluid .countergroup .counter .countername {
+        font-size: 14px;
+    };
+
+    /* ******* 3.6 About Us  ***** */
+}
+
+@media screen and (max-width:575px){
+	:root{
+		--heading-1: 30px;
+		--heading-3: 22px;
+		/* --heading-6: 14px; */
+	}
+	.heading {
+		gap: 4px;
+	}
+	.header .navbar-brand {
+        height: 45px
+    }
+
+    .header .rightside .nevigate {
+        gap: 10px
+    }
+
+    /* navcenter */
+    .navcenter .owl-nav{
+        width: calc(100% + 40px);
+    }
+    .navcenter .owl-nav button{
+        width: 40px;
+        height: 40px;
+    }
+    .navcenter .owl-nav button.owl-prev {
+        left: -20px;
+    }
+    .navcenter .owl-nav button.owl-next {
+        right: -20px;
+    }
+	.musiccard .musicimg {
+        width: 45px;
+        height: 45px;
+    }
+
+    .musiccard .musicname .episode {
+        font-size: 12px;
+    }
+
+    .blogcard.varticalblog , .blogcard.socialblog {
+        padding: 12px;
+    }
+
+    .recentarticle-card {
+        height: unset !important;
+    }
+
+    .recentarticle-card .card-body {
+        padding: 12px;
+    }
+
+    .blogcard .toolbtn {
+        top: 27px;
+        right: 27px;
+    }
+
+    .recentarticle-card::before {
+        height: calc(100% - 12px);
+        width: calc(100% - 12px);
+    }
+
+    .wigits .card .cardheader {
+        padding: 1.25rem 1rem;
+    }
+
+    .wigits .card .card-body {
+        padding: 1.25rem 1rem;
+    }
+
+    .wigits .card .card-body .trending-topic li {
+        padding: 1.25rem 1rem;
+    }
+
+    .wigits .card .card-body .trending-topic li::before {
+        width: calc(100% - 2rem);
+    }
+
+    .footersection .footer-menu ul {
+        gap: 8px;
+    }
+
+
+    .errorsection .errorfield .card .card-body .error {
+        font-size: 20vw;
+    }
+
+    .errorsection .errorfield .card .robot {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* .contactus-section .contactcard .card-body .address {
+        gap: 15px;
+    }
+
+    .contactus-section .contactcard .card-body .address span {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        padding: 8px;
+    }
+
+    .contactus-sections .quotecard .card-body {
+        padding: 30px;
+    } */
+
+    .clients-section .client-testimonial .owl-dots button {
+        width: 10px;
+        height: 10px;
+    }
+
+    .clients-section .clientcard .card-body {
+        padding: 20px;
+    }
+
+    .clients-section .clientcard .card-body .rating {
+        padding-left: 55px;
+    }
+
+    .clients-section .clientcard .card-body .rating li {
+        height: 18px;
+        width: 18px;
+    }
+    .videosection .innerbody .video-top .heading .arrowimg{
+        height: 30px;
+        width: 30px;
+    }
+}
